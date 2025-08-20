@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sonu Murar - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #f0f2f5;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: linear-gradient(135deg, #4CAF50, #2E7D32);
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3em;
+      animation: fadeInDown 1s ease;
+    }
+
+    header p {
+      margin: 10px 0 0;
+      font-size: 1.2em;
+      animation: fadeIn 2s ease;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    section {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 0 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      padding: 30px;
+    }
+
+    h2 {
+      color: #4CAF50;
+      border-bottom: 2px solid #4CAF50;
+      display: inline-block;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    .social-links a {
+      margin-right: 15px;
+      text-decoration: none;
+      color: #4CAF50;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .social-links a:hover {
+      color: #2E7D32;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #333;
+      color: white;
+    }
+
+    /* Projects Cards */
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .project-card {
+      flex: 1 1 calc(50% - 20px);
+      background: #e8f5e9;
+      border-radius: 10px;
+      padding: 20px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    }
+
+    @media (max-width: 600px) {
+      .projects { flex-direction: column; }
+      .project-card { flex: 1 1 100%; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Sonu Murar</h1>
+    <p>Junior Accountant | Tally Operator | Web Enthusiast</p>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>Hello! I am <strong>Sonu Murar</strong>, a professional with 3 years of experience in accounting and Tally operations. I am passionate about learning web development and creating digital projects that make a difference.</p>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <ul>
+      <li>Accounting & Bookkeeping</li>
+      <li>Tally ERP 9</li>
+      <li>Basic Web Development (HTML, CSS, JS)</li>
+      <li>Microsoft Excel & Word</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>My personal website showcasing my skills and projects.</p>
+      </div>
+      <div class="project-card">
+        <h3>Accounting Dashboard</h3>
+        <p>A sample dashboard for tracking expenses and finances using Excel and Tally.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Connect with Me</h2>
+    <div class="social-links">
+      <a href="https://github.com/SonuMurar" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/SonuMurar" target="_blank">LinkedIn</a>
+      <a href="mailto:sonumurar7662@gmail.com">Email</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Sonu Murar. All rights reserved.
+  </footer>
+
+</body>
+</html>
